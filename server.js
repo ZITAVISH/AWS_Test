@@ -3,7 +3,7 @@ const app=express();
 
 app.set('view engine','pug');
 
-app.get('/hello',(req,res)=>{
+app.get('/',(req,res)=>{
 console.log(req.ip);
 res.render('hello_world',{"title":"Rounak","message":"Rendering from AWS"});
 });
