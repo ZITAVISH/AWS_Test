@@ -5,7 +5,7 @@ app.set('view engine','pug');
 
 app.get('/hello',(req,res)=>{
 console.log(req.ip);
-res.render('hello_world',{"title":"Rounak","message":"message"});
+res.render('hello_world',{"title":"Rounak","message":"Rendering from AWS"});
 });
 
 app.listen(8080,()=>{
