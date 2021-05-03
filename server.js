@@ -5,7 +5,7 @@ app.set('view engine','pug');
 
 app.get('/',(req,res)=>{
 console.log(req.ip);
-res.render('hello_world',{"title":"Rounak","message":"Rendering from AWS"});
+res.send('hello_world');
 });
 
 app.listen(8080,()=>{
